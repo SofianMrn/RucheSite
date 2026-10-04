@@ -1,0 +1,4 @@
+# Impeccable engine binary: the skill launcher downloads and verifies it on first run
+.claude/skills/impeccable/scripts/bin/
+# Impeccable per-developer settings
+.impeccable/config.local.json
