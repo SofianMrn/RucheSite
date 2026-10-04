@@ -586,7 +586,7 @@
   /* ---------- Film : dialogue vidéo (Hero Video Dialog de Magic UI) ---------- */
   var FILMS = {
     lancement: { title: 'Le film La Ruche · 2 min', base: 'assets/media/lancement', poster: 'assets/img/poster-lancement.webp', vtt: 'assets/media/lancement.fr.vtt', transcript: 'assets/media/lancement.description.vtt' },
-    explication: { title: 'Le parcours La Ruche, du besoin au devis · 2 min', base: 'assets/media/explication', poster: 'assets/img/poster-explication.webp', vtt: 'assets/media/explication.fr.vtt' }
+    explication: { title: 'Le parcours La Ruche, du besoin au devis · 2 min', base: 'assets/media/presentation', poster: 'assets/img/poster-presentation.webp', vtt: 'assets/media/presentation.fr.vtt' }
   };
   var dialog = $('[data-film-dialog]');
   var video = dialog && $('[data-film-video]', dialog);
@@ -632,7 +632,8 @@
     track.srclang = 'fr';
     track.label = 'Français';
     track.src = film.vtt;
-    track.default = true;
+    // les films ont déjà leur texte incrusté à l'image : sous-titres disponibles (bouton CC), pas imposés
+    track.default = false;
     video.appendChild(track);
     video.load();
     $('[data-film-title]', dialog).textContent = film.title;
