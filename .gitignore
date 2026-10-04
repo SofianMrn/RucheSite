@@ -2,3 +2,5 @@
 .claude/skills/impeccable/scripts/bin/
 # Impeccable per-developer settings
 .impeccable/config.local.json
+# Claude Code per-machine settings (holds the Impeccable hook)
+.claude/settings.local.json
