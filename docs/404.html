@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page introuvable · La Ruche by InovElite</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#070A1F">
+  <meta name="color-scheme" content="dark">
+  <style>
+    /* Page autonome : GitHub Pages la sert à n'importe quelle adresse, les chemins relatifs ne sont pas fiables ici. */
+    @font-face {
+      font-family: "Poppins";
+      font-weight: 700;
+      font-display: swap;
+      src: url("/RucheSite/assets/fonts/poppins-latin-700-normal.woff2") format("woff2"),
+           url("/assets/fonts/poppins-latin-700-normal.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: "Inter";
+      font-weight: 100 900;
+      font-display: swap;
+      src: url("/RucheSite/assets/fonts/inter-latin-wght-normal.woff2") format("woff2-variations"),
+           url("/assets/fonts/inter-latin-wght-normal.woff2") format("woff2-variations");
+    }
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 2rem 1.25rem;
+      background:
+        radial-gradient(50% 45% at 50% 40%, rgba(43, 89, 255, 0.22), transparent 70%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='34.64'%3E%3Cpath d='M0 17.32 10 0h20l10 17.32-10 17.32H10ZM40 17.32h20' fill='none' stroke='%237fa0ff' stroke-opacity='.08'/%3E%3C/svg%3E") center / 60px 34.64px,
+        #070a1f;
+      color: #f2f5ff;
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      text-align: center;
+    }
+    main { max-width: 34rem; }
+    svg { width: 96px; height: 96px; margin: 0 auto 1.5rem; display: block; filter: drop-shadow(0 0 28px rgba(43, 89, 255, 0.7)); }
+    polygon { fill: #2b59ff; }
+    .gap { fill: #070a1f; stroke: #7fa0ff; stroke-width: 4; }
+    h1 { margin: 0; font-family: "Poppins", "Segoe UI", sans-serif; font-weight: 700; font-size: clamp(1.8rem, 1.2rem + 3vw, 2.8rem); line-height: 1.1; letter-spacing: -0.03em; }
+    p.lead { margin: 1rem 0 2rem; color: #a3add3; font-size: 1.08rem; line-height: 1.6; }
+    a.btn {
+      display: inline-flex; align-items: center; min-height: 52px; padding: 0 1.5rem;
+      border-radius: 999px; background: #2b59ff; color: #fff; font-weight: 600; text-decoration: none;
+    }
+    a.btn:hover { background: #2448d6; }
+    a.btn:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,4 90,27 90,73 50,96 10,73 10,27"/><polygon class="gap" points="50,32 66,41 66,59 50,68 34,59 34,41"/></svg>
+    <h1>Cette alvéole est vide.</h1>
+    <p class="lead">Erreur 404 : la page demandée n’existe pas ou a été déplacée. Tout le reste de la ruche vous attend.</p>
+    <a class="btn" href="/RucheSite/" data-home>Revenir à l’accueil</a>
+  </main>
+  <script>
+    // Hors de GitHub Pages (domaine personnalisé), l'accueil est à la racine.
+    if (!/github\.io$/.test(location.hostname)) document.querySelector('[data-home]').setAttribute('href', '/');
+  </script>
+</body>
+</html>

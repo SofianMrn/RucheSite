@@ -4,3 +4,8 @@
 .impeccable/config.local.json
 # Claude Code per-machine settings (holds the Impeccable hook)
 .claude/settings.local.json
+# Impeccable : captures de relecture et caches locaux
+.impeccable/review/
+.impeccable/hook.cache.json
+.impeccable/live/
+.impeccable/questions/

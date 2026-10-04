@@ -1,0 +1,16 @@
+{
+  "name": "La Ruche by InovElite",
+  "short_name": "La Ruche",
+  "description": "Vendez l'audiovisuel comme un expert : catalogues, compatibilités, stocks et meilleurs prix réunis, devis en quelques minutes.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#070a1f",
+  "theme_color": "#070a1f",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

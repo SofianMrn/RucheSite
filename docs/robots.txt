@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sofianmrn.github.io/RucheSite/sitemap.xml
